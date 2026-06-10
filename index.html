@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Isabela ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.container{
+    padding:20px;
+}
+
+input{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    margin-top:10px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+#conteudo{
+    display:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="login">
+<h1>❤️ Para Isabela ❤️</h1>
+<p>Digite a data em que nossa história começou</p>
+
+<input type="password" id="senha" placeholder="10/05/2025">
+<br>
+
+<button onclick="entrar()">Entrar</button>
+
+</div>
+
+<div id="conteudo">
+<h1>Bem-vinda, Isabela ❤️</h1>
+<p>Esse é apenas o começo da sua surpresa.</p>
+</div>
+
+</div>
+
+<script>
+function entrar(){
+let senha = document.getElementById("senha").value;
+
+if(senha === "10/05/2025"){
+document.getElementById("login").style.display="none";
+document.getElementById("conteudo").style.display="block";
+}else{
+alert("Senha incorreta ❤️");
+}
+}
+</script>
+
+</body>
+</html>
